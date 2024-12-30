@@ -1,0 +1,13 @@
+How to install Docker Compose on Windows step by step
+
+Step 1: Start PowerShell
+First, launch PowerShell using your administrator rights. Confirm “Yes” to allow the app to make changes to your device.
+
+
+Step 2: Set up TLS security protocol
+GitHub requires TLS1.2 as the default security protocol. Run the following command in Windows PowerShell:
+  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Step 3: Test Docker Compose
+  docker compose version
+
+  
